@@ -54,7 +54,7 @@ namespace Karthus
             {
                 case SpellSlot.Q:
                 {
-                    if (Q.Cast(target))
+                    if (Q.Cast(Q.GetPrediction(target).CastPosition))
                     {
                         // Q was casted
                         return true;
